@@ -17,5 +17,6 @@ module.exports = defineConfig({
     specPattern:"cypress/e2e/features/*.feature",
     baseUrl:"https://barrigareact.wcaquino.me/",
     chromeWebSecurity:false,
+    experimentalRunAllSpecs:true
   },
 });

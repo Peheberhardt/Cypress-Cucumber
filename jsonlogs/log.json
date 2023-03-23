@@ -1,0 +1,70 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-page;should-sign-up",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Should Sign up",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I go to website",
+            "result": {
+              "duration": 3198000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 5,
+            "name": "I fill the login and password with : \"pedro@testes\" and \"pedrosenhas\"",
+            "result": {
+              "duration": 502000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 6,
+            "name": "click on Login button",
+            "result": {
+              "duration": 89000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be logged",
+            "result": {
+              "duration": 1417000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-page",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login page",
+    "uri": "cypress\\e2e\\features\\login.feature"
+  }
+]

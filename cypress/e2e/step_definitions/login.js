@@ -1,24 +1,22 @@
 import {Given, When, And, Then} from '@badeball/cypress-cucumber-preprocessor';
-import LoginActions from '../Pages/LoginPage/LoginActions';
-
-const loginpage = new LoginActions();
+import { loginActions } from '../Pages/LoginPage/LoginActions';
 
 Given(/^I go to website$/, () => {
-	loginpage.goToWebSite();
+	loginActions.goToWebSite();
 });
 
 
 When(/^I fill the login and password with : "([^"]*)" and "([^"]*)"$/, (user,password) => {
-	loginpage.fillLoginAndPasswordInput(user, password);
+	loginActions.fillLoginAndPasswordInput(user, password);
 });
 
 Then(/^click on Login button$/, () => {
-	loginpage.clickOnLoginButton()
+	loginActions.clickOnLoginButton()
 });
 
 
 Then(/^I should be logged$/, () => {
-	loginpage.checkLoginSuccessful()
+	loginActions.checkLoginSuccessful()
 });
 
 

@@ -23,3 +23,20 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('Get',(locator) =>{
+    cy.get(locator)
+        .should('be.visible')
+} )
+
+Cypress.Commands.add('Xpath',(locator) =>{
+    cy.xpath(locator)
+        .should('be.visible')
+} )
+
+Cypress.Commands.add('CheckMsg',(msg) =>{
+    cy.xpath(`//div[text()='${msg}']`)
+        .should('be.visible')
+        .should('have.text', msg)
+} )
+

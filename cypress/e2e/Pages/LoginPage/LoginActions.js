@@ -1,7 +1,7 @@
 /// <references types =”cypress”/>
 
 
-export default class LoginActions {
+class LoginActions {
 
     goToWebSite(){
         let url = Cypress.config('baseUrl')
@@ -28,5 +28,5 @@ export default class LoginActions {
             .should('have.text', 'Bem vindo, pedro!')
             .click()
     }
-
 }
+export const loginActions = new LoginActions();
